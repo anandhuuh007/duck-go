@@ -1,0 +1,552 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+ background-color: black;
+ overflow-x: hidden;
+
+  
+}
+html{
+  overflow-x: hidden;
+}
+
+
+
+.app {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  padding-top: 88px;
+}
+
+.app .mainHeading h1 {
+  text-align: center;
+}
+
+.app h1,
+h2 {
+  color: rgb(190, 184, 80);
+}
+
+.app .input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.app .input {
+  margin-top: 0.8em;
+  
+  height: 2em;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 6px;
+  padding: 5px;
+  
+}
+
+.app .input input {
+  width: 100%;
+  height: 1.6em;
+  border-color: transparent;
+  outline-color: transparent;
+  transform: translateX(3px);
+  
+ 
+  
+}
+
+.app i {
+  cursor: pointer;
+  font-size: larger;
+  font-weight: 900;
+  color: grey;
+  margin-right: 5px;
+}
+.app .todos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.app .todos .todo {
+  margin-top: 0.8em;
+  
+  height: 2em;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 6px;
+  padding: 5px;
+}
+.app .todos .todo .left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.app .todos .todo .left p {
+  margin-left: 3px;
+  font-size: medium;
+  font-weight: 700;
+  font-style: normal;
+  color: rgb(57, 56, 56);
+}
+.image{
+    height: 75px;
+    width: 69px;
+    transform: translate(241px, -56px);
+}
+.subHeading{
+      padding-left: 47px;
+}
+.second-head{
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: -47px;
+}
+.first-head{
+  font-family: cursive;
+}
+.header {
+  background-color:azure;   
+  height: 40px;
+  width: 100%;
+  position: fixed;
+}
+.app .input,
+.app .todos .todo {
+  background: rgba(255, 255, 255, 0.2);    /* semi-transparent */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);     /* Safari support */
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  
+}
+.glass-card {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  padding: 20px;
+  margin: 20px auto;
+  margin-top: 20px;
+  width: 90%;
+  max-width: 350px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  border: 1px solid rgba(94, 91, 91, 0.2);
+}
+.subHeading{
+  padding-left: 51px;
+}
+.glass-card {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px auto; /* Center horizontally */
+  width: 90%;         /* Flexible width */
+  max-width: 350px;   /* Don’t get too wide on big screens */
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-sizing: border-box; /* Prevent padding from causing overflow */
+  min-width: 320px;
+}
+.input{
+    transform: translateX(-12px);
+    width: 290px;
+}
+.todo{
+    transform: translateX(0px);
+    width: 290px;
+
+}
+.grass-bg-1{
+ width: 484px;
+    height: 57px;
+    margin-top: -9px;
+    transform: translateX(-22px);
+}
+
+
+.bg{
+    width: 100.5%;
+    height: 392px;
+     padding-left: 1px;
+    
+}
+
+.glass-card{
+  transform: translateY(-108px);
+}
+.app{
+  position: fixed;
+}
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.first-head {
+  font-family: cursive;
+  animation: fadeInLeft 3s ease forwards;
+}
+.subHeading {
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+  animation: fadeInRight 3s ease forwards;
+  
+}
+
+
+.logo {
+  height: 114px;
+  transform: translate(-12px,-68px);
+ 
+  
+}
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: translate(-12px, -68px) scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-12px, -68px) scale(1);
+  }
+}
+
+.logo {
+  height: 114px;
+  animation: popIn 2s ease forwards;
+  animation-delay: 1.5s;
+  opacity: 0;
+  
+}
+@keyframes popInCard {
+  0% {
+    opacity: 0;
+    transform: translateY(-108px) scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-108px) scale(1);
+  }
+}
+
+.glass-card {
+  /* Existing styles here */
+  animation: float 3s ease-in-out infinite;
+  animation: float 3s ease-in-out infinite;
+}
+
+  
+
+
+
+.ufo-container {
+  width: 100%;
+  max-width: 250px;
+  margin: 20px auto 0; /* space below your boxes */
+}
+
+.ufo-container canvas {
+  display: block;
+  width: 100%;
+}
+
+@keyframes flyInUFO {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(10%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(20px);
+    opacity: 1;
+  }
+}
+
+.ufo-container {
+  animation: flyInUFO 2s ease forwards;
+}
+.ufo-container {
+  position: absolute;
+   top: 218px;
+    left: 539px;
+    width: 100%;
+    animation-delay: 1.5s;
+    opacity: 0;
+}
+@media (max-width: 768px){
+  .ufo-container{
+    left: 9.8%;
+    top: 224px;
+  }
+}
+
+.poo{
+  transform: translateY(147px);
+}
+.plus{
+  transform: translateX(6px);
+}
+.app i.plus {
+  color: rgb(211, 234, 60);
+}
+.into{
+  transform: translateX(5px);
+}
+.app i.into {
+  color: rgb(211, 234, 60);
+}
+.app{
+  position: relative;
+}
+.first-head{
+      margin-top: -361px;
+}
+.subHeading{
+      padding-left: 540px;
+}
+.header{
+   position: fixed;
+   z-index: 999;
+}
+
+.app {
+  position: relative;   
+  top: auto;            
+  left: auto;           
+  transform: none;      
+  padding: 60px 20px;   
+}
+
+
+.first-head {
+  margin-top: 0;
+}
+.mainHeading{
+      transform: translateY(-326px);
+}
+.second-head{
+  transform: translateY(-328px);
+}
+.image{
+  transform: translate(241px, -386px);
+}
+.ufo-container{
+  
+    left: -24px;
+    position: relative;
+    top: -419px;
+}
+.glass-card{
+  transform: none;
+}
+.poo{
+  
+  transform: translate(-3px,-373px);
+}
+.input{
+  transform: translate(3px, -5px);
+}
+@media (max-width: 768px){
+ .input{
+  transform: translate(-12px, -5px);
+ }
+ .second-head{
+  transform: translate(-437px, -347px);
+ }
+ .image{
+        transform: translate(-366px, -459px);
+        width: 120px;
+        height: 138px;
+ }
+ .ufo-container{
+  top: -492px;
+ }
+
+
+
+ }
+
+
+
+
+
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+.glass-card {
+  animation: fadeIn 1.8s ease forwards , float 3s ease-in-out infinite;
+  animation-delay:1.5s;
+  opacity: 0;
+}
+.poo{
+          transform: translate(0px, -470px);
+}
+@media (max-width: 768px){
+
+.poo{
+  transform: translateY(-540px);
+}
+
+}
+.completed {
+  position: relative;
+  color: rgb(158, 34, 34); /* or your desired normal task color */
+}
+
+
+
+
+.time {
+  font-size: 0.8rem;
+  color: #232728;
+  margin-left: 15px;
+  
+}
+
+.success-message {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #d4edda;
+  color: #155724;
+  border-radius: 10px;
+  font-weight: bold;
+  text-align: center;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+.todo-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  width: 100%;
+  gap: 10px;
+  overflow: hidden;
+}
+
+.task-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-grow: 1;
+}
+
+.time {
+  white-space: nowrap;
+  color: #ccc;
+  font-size: 0.8rem;
+  flex-shrink: 0;
+}
+
+
+.todo .left {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  gap: 8px;
+  max-width: 100%;
+}
+
+.todo-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.task-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 1;
+}
+
+.time {
+  white-space: nowrap;
+  color: #ccc;
+  font-size: 0.8rem;
+  flex-shrink: 0;
+  transform: translateX(-22px);
+}
+.right{
+  transform: translate(-18.5px, 3px);
+}
+
+.task-text {
+  position: relative;
+  display: inline-block;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.task-text::after {
+  content: '';
+  position: absolute;
+  left: -10%;
+  top: 55%;
+  height: 2px;
+  background: white;
+  width: 0%;
+  transition: width 0.4s ease;
+  transform: translateY(-0%);
+}
+
+.completed .task-text::after {
+  width: 100%;
+}
+.completed .task-text {
+  color: #aaa;
+}
+
+.header{
+  background-color: #27252c;
+}
