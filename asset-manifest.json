@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/duck-go/static/css/main.a65a9b76.css",
+    "main.js": "/duck-go/static/js/main.a02545c5.js",
+    "static/js/453.da735b4c.chunk.js": "/duck-go/static/js/453.da735b4c.chunk.js",
+    "static/media/duck.png": "/duck-go/static/media/duck.03d1c592db737787f563.png",
+    "static/media/amongus.png": "/duck-go/static/media/amongus.dccb1fa0e2d00e570432.png",
+    "index.html": "/duck-go/index.html",
+    "main.a65a9b76.css.map": "/duck-go/static/css/main.a65a9b76.css.map",
+    "main.a02545c5.js.map": "/duck-go/static/js/main.a02545c5.js.map",
+    "453.da735b4c.chunk.js.map": "/duck-go/static/js/453.da735b4c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a65a9b76.css",
+    "static/js/main.a02545c5.js"
+  ]
+}
